@@ -2,8 +2,6 @@ import React from "react";
 import cn from "classnames";
 import { Link } from "react-router-dom";
 import styles from "./Hero.module.sass";
-import Image from "../../../components/Image";
-import ScrollButton from "../../../components/ScrollButton";
 import VerticalScrollButton from "../../../components/VerticalScrollButton";
 
 const Hero = ({ scrollToRef }) => {
@@ -28,14 +26,14 @@ const Hero = ({ scrollToRef }) => {
                             className={cn("button", styles.button)}
                             to="/download"
                         >
-                            Download App
+                            Book an Appointment &nbsp; 👋
                         </Link>
-                        <Link
+                        {/* <Link
                             className={cn("button-stroke", styles.button)}
                             to="/class02-details"
                         >
                             Book a Class
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
                 

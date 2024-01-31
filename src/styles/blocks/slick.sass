@@ -127,6 +127,32 @@
     .slick-next
         right: calc(50% - 34px)
 
+//app slider
+.app-slider
+    padding-bottom: 68px
+    +m
+        padding-bottom: 64px
+    .slick-arrow
+        bottom: -48px
+        width: 64px
+        height: 64px
+        border: 2px solid $neutrals6
+        border-radius: 50%
+        transition: all 500ms ease
+        &.slick-disabled
+            cursor: not-allowed
+        &:not(.slick-disabled)
+            &:hover 
+                background: #33CA7F
+                border-color: #33CA7F
+                transition: all 500ms ease
+                svg
+                    fill: $white
+    .slick-prev
+        left: 0
+    .slick-next
+        left: 96px
+
 // comment slider
 .comment-slider
     position: static

@@ -21,11 +21,12 @@ const Home = () => {
     <>
       <Hero scrollToRef={scrollToRef} />
       <Clients />
+      <Book />
+      <About />
+
       <Steps scrollToRef={scrollToRef} />
       <Intro />
-      <Book />
       <ValueProps className="section" />
-      <About />
       <Team />
       <Review className="section" />
       <Quality />

@@ -4,15 +4,15 @@
     position: relative
     display: flex
     align-items: center
-    min-height: 880px
-    padding: 34px 0 130px
+    //min-height: 880px
+    padding: 34px 0 80px
     +x
         min-height: 800px
     +d
         min-height: 624px
     +m
         min-height: auto
-        padding: 64px 0 152px
+        padding: 64px 0 102px
 
 .wrap
     position: relative
@@ -25,8 +25,10 @@
         margin-bottom: 80px
 
 .title
+    line-height: 1.4
     text-align: center
     margin-bottom: 20px
+    +whyte-heavy
     &.dFlex
         display: flex
         gap: 1rem
@@ -38,15 +40,30 @@
     text-wrap: nowrap
 
 .text
+    font-size: 1.25rem
+    max-width: 630px
+    margin-inline-start: auto
+    margin-inline-end: auto
+    text-align: center
     margin-bottom: 40px
-    color: $neutrals4
+    color: $neutrals2
+    +fragment-mono
 
 .btns
     display: flex
-    +m
-        display: block
+    justify-content: center
+    /* +m
+        display: block */
 
 .button
+    height: auto
+    font-size: 1.5rem
+    +sf-pro-display-medium
+    background-color: $neutrals2
+    padding: 15px 48px
+    border-radius: 68px
+    &:hover
+        background-color: $neutrals2
     +m
         width: 100%
     &:not(:last-child)

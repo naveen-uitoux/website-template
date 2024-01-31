@@ -21,21 +21,21 @@ const list = [
     url: "/images/content/travelers.svg",
   },
   {
-    title: "goldlines",
-    url: "/images/content/goldlines.svg",
+    title: "waves",
+    url: "/images/content/waves.svg",
   },
   {
-    title: "velocity9",
-    url: "/images/content/velocity9.svg",
+    title: "travelers",
+    url: "/images/content/travelers.svg",
   },
 ];
 
 const Clients = () => {
   return (
     <div className={styles.clients}>
-      <div className={cn("container", styles.container)}>
-        <ScrollParallax className={styles.title}>
-          Trusted by more than 2M users worldwide
+      <div className={cn("container-fluid", styles.container)}>
+        <ScrollParallax className={styles.title} initiallyVisible={true}>
+          Happy Clients 
         </ScrollParallax>
         <div className={styles.list}>
           {list.map((x, index) => (

@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import "./styles/app.sass";
+import "../node_modules/animate.css/animate.min.css";
 import Page from "./components/Page";
 import Home from "./screens/Home";
 import Features from "./screens/Features";

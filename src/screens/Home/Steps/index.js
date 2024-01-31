@@ -5,32 +5,48 @@ import ScrollParallax from "../../../components/ScrollParallax";
 
 const items = [
   {
-    title: "Download",
+    title: "Explore & Dream",
     color: "#3772FF",
-    images: "/images/content/download.svg",
+    images: "/images/content/home/steps/dream.svg",
     content:
-      "Fitness Pro tracks your workouts, get better results, and be the best version of you.",
+      "Imagine your digital dream, share your vision and we brainstorm possibilities.",
   },
   {
-    title: "Choose your trainner",
+    title: "Design Magic",
     color: "#9757D7",
-    images: "/images/content/whistle.svg",
+    images: "/images/content/home/steps/design.svg",
     content:
-      "Fitness Pro tracks your workouts, get better results, and be the best version of you.",
+      "Our designers do their magic to bring your vision to life. Collaborate, tweak, and perfect!",
   },
   {
-    title: "Set the goals",
+    title: "Code Symphony",
     color: "#EF466F",
-    images: "/images/content/medal.svg",
+    images: "/images/content/home/steps/code.svg",
     content:
-      "Fitness Pro tracks your workouts, get better results, and be the best version of you.",
+      "Our coding wizards work their spells, ensuring code quality through rigorous testing.",
+  },
+];
+const list = [
+  {
+    title: "Launchpad",
+    color: "#45B26B",
+    images: "/images/content/home/steps/launchpad.svg",
+    content:
+      "Countdown to launch begins as your creation takes off. Celebrate the launch with fireworks!",
   },
   {
-    title: "Workout time",
-    color: "#45B26B",
-    images: "/images/content/stopwatch.svg",
+    title: "Cosmic Support",
+    color: "#FB993E",
+    images: "/images/content/home/steps/chat.svg",
     content:
-      "Fitness Pro tracks your workouts, get better results, and be the best version of you.",
+      "We're your 24/7 cosmic companions, covering updates and seamless support - we have got the galaxy covered.",
+  },
+  {
+    title: "Explore New Horizons",
+    color: "#0B0033",
+    images: "/images/content/home/steps/explore.svg",
+    content:
+      "Reflect on your success, dream bigger, and envision the future as we explore new horizons with you!",
   },
 ];
 
@@ -39,11 +55,8 @@ const Steps = ({ scrollToRef }) => {
     <div className={cn("section", styles.section)} ref={scrollToRef}>
       <div className={cn("container", styles.container)}>
         <div className={styles.head}>
-          <h2 className={cn("h2", styles.title)}>How it works</h2>
-          <div className={styles.info}>
-            Stacks is a production-ready library of stackable content blocks
-            built in React Native.
-          </div>
+          <h2 className={cn("h2", styles.title)}>The power to achieve excellence</h2>
+          <div className={styles.info}>How?</div>
         </div>
         <div className={styles.list}>
           {items.map((x, index) => (
@@ -54,7 +67,23 @@ const Steps = ({ scrollToRef }) => {
               >
                 <img src={x.images} alt={`Step ${index}`} />
               </div>
-              <div className={styles.number}>Step {index + 1}</div>
+              {/* <div className={styles.number}>Step {index + 1}</div> */}
+              <div className={styles.subtitle}>{x.title}</div>
+              <div className={styles.content}>{x.content}</div>
+            </ScrollParallax>
+          ))}
+        </div>
+        <div className={styles.space}></div>
+        <div className={styles.list}>
+          {list.map((x, index) => (
+            <ScrollParallax className={styles.item} key={index}>
+              <div
+                className={styles.preview}
+                style={{ backgroundColor: x.color }}
+              >
+                <img src={x.images} alt={`Step ${index}`} />
+              </div>
+              {/* <div className={styles.number}>Step {index + 1}</div> */}
               <div className={styles.subtitle}>{x.title}</div>
               <div className={styles.content}>{x.content}</div>
             </ScrollParallax>

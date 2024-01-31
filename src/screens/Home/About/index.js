@@ -1,27 +1,34 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import cn from "classnames";
 import styles from "./About.module.sass";
-import Icon from "../../../components/Icon";
+/* import Icon from "../../../components/Icon"; */
 import ScrollParallax from "../../../components/ScrollParallax";
 
 const items = [
   {
-    title: "Intuitive and clean design",
+    title: "Customer-Centric Approach: It's All About You!",
     content:
       "Track your workouts, get better results, and be the best version of you.",
     color: "#9757D7",
   },
   {
-    title: "An exercise in simplicity",
+    title: "Innovation & Excellence: Where Every Day is Extraordinary!",
     content:
       "Track your workouts, get better results, and be the best version of you.",
     color: "#EF466F",
   },
   {
-    title: "The most popular workouts",
+    title: "Integrity & Transparency: The Trust Tango!",
     content:
       "Track your workouts, get better results, and be the best version of you.",
     color: "#45B26B",
+  },
+  {
+    title: "Long-Term Commitment: Sustainability is Our Jam!",
+    content:
+      "Track your workouts, get better results, and be the best version of you.",
+    color: "#B24545",
   },
 ];
 
@@ -54,7 +61,7 @@ const About = () => {
                     0{index + 1}
                   </div>
                   <div className={styles.subtitle}>{x.title}</div>
-                  <div className={styles.content}>{x.content}</div>
+                  {/* <div className={styles.content}>{x.content}</div> */}
                 </ScrollParallax>
               ))}
             </div>
@@ -62,8 +69,8 @@ const About = () => {
           <div className={styles.col}>
             <div className={styles.bg}>
               <img
-                srcSet="/images/content/about-pic@2x.png 2x"
-                src="/images/content/about-pic.png"
+                srcSet="/images/content/home-about.png 2x"
+                src="/images/content/home-about.png"
                 alt="About pic"
               />
               {/* <ScrollParallax className={styles.preview} animateIn="fadeInUp">
@@ -73,11 +80,15 @@ const About = () => {
                   alt="Plate"
                 />
               </ScrollParallax> */}
-              <button className={cn("play", styles.play)}>
+              {/* <button className={cn("play", styles.play)}>
                 <Icon name="play" size="21" />
-              </button>
+              </button> */}
             </div>
           </div>
+        </div>
+        <div className={styles.endInfo}>
+          <h4 className={cn("h4", styles.endTitle)}>“Where Values Aren't Just Words; They're Our Way of Life. “</h4>
+          <Link className={cn("button-stroke", styles.button)} to="/class02-details">Know more</Link>
         </div>
       </div>
     </div>

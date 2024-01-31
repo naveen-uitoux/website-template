@@ -1,7 +1,7 @@
 @import ../../../styles/helpers
 
 .head
-    max-width: 400px
+    max-width: 544px
     margin: 0 auto 80px
     text-align: center
     +d
@@ -36,10 +36,13 @@
             width: 40px
             height: 1px
 
+.space
+    margin-bottom: 90px
+
 .item
     position: relative
-    flex: 0 0 calc(25% - 32px)
-    width: calc(25% - 32px)
+    flex: 0 0 calc(33.3333% - 32px)
+    width: calc(33.3333% - 32px)
     margin: 0 16px
     text-align: center
     +t
@@ -52,23 +55,23 @@
         content: ""
         position: absolute
         top: 39px
-        right: -79px
-        width: 120px
+        right: -30%
+        width: 50%
         height: 2px
         background-image: linear-gradient(90deg, $neutrals5 0, $neutrals5 6px, transparent 6px, transparent 14px)
         background-repeat: repeat-x
         background-size: 12px auto
-        +r(1260)
+        /* +r(1260)
             right: -66px
-            width: 100px
+            width: 100px */
         +d
-            right: -50px
-            width: 60px
-        +t
+            right: -25%
+            width: 40%
+        /* +t
             right: -79px
-            width: 120px
-        +m
-            right: 11px
+            width: 120px */
+        /* +m
+            right: 11px */
     &:first-child
         .preview
             &:before
@@ -122,5 +125,8 @@
 .content
     +caption-1
     color: $neutrals3
+    max-width: 256px
+    margin-inline-end: auto
+    margin-inline-start: auto
     +dark
         color: $neutrals6

@@ -1,0 +1,58 @@
+@import ../../styles/helpers
+
+.scroll
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    width: 100px
+    height: 48px
+    border-radius: 60px
+    background: none
+    overflow: hidden
+    border: 2px solid $white
+    transition: border-color .2s
+    +d
+        width: 40px
+        height: 40px
+    svg
+        fill: $white
+        transition: fill .2s
+    &:hover
+        border-color: $white
+        svg
+            fill: $white
+    +dark
+        border-color: $white
+        svg
+          path
+            fill: $white
+        &:hover
+            border-color: $white
+            svg
+                fill: $white
+
+.line
+    display: flex
+    flex-direction: row
+    transform: translateX(-50px)
+    animation: arrowsRight ease-out 1.4s infinite
+    +d
+        transform: translateX(-22px)
+        animation-name: arrowsRightSmall
+    svg
+        &:not(:last-child)
+            margin-right: 50px
+            +d
+                margin-right: 30px
+
+@keyframes arrowsRight
+    80%
+        transform: translateX(50px)
+    100%
+        transform: translateX(50px)
+
+@keyframes arrowsRightSmall
+    80%
+        transform: translateX(22px)
+    100%
+        transform: translateX(22px)

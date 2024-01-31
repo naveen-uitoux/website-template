@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Ensure the complete history is fetched
 
       - name: Setup Node
         uses: actions/setup-node@v1  # Use a stable Node.js version
@@ -33,7 +35,7 @@ jobs:
         run: git fetch --prune --unshallow  # Ensure the repository is fully up-to-date
 
       - name: Install dependencies
-        uses: npm install --legacy-peer-deps
+        run: npm install --legacy-peer-deps
 
       - name: Build project
         run: npm run build

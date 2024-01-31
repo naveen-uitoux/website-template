@@ -18,19 +18,24 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Ensure the complete history is fetched
 
       - name: Setup Node
-        uses: actions/setup-node@v1
-        with: 
-          node-version: 20
+        uses: actions/setup-node@v1  # Use a stable Node.js version
+        with:
+          node-version: 14
 
       - name: Set up Git
         run: |
           git config --global user.email "naveen@uitoux.in"
           git config --global user.name "Naveen S.R."
 
+      - name: Fetch repository
+        run: git fetch --prune --unshallow  # Ensure the repository is fully up-to-date
+
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        uses: npm install --legacy-peer-deps
 
       - name: Build project
         run: npm run build
@@ -59,3 +64,5 @@ jobs:
         with:
           github_token: ${{ secrets.REACT_GITHUB_TOKEN }}
           publish_dir: ./build
+        env:
+          CI: true  # Add CI environment variable to avoid prompting for user input during the deploy process

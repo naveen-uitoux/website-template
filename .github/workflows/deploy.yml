@@ -31,9 +31,6 @@ jobs:
           git config --global user.email "naveen@uitoux.in"
           git config --global user.name "Naveen S.R."
 
-      - name: Fetch repository
-        run: git fetch --prune --unshallow  # Ensure the repository is fully up-to-date
-
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 

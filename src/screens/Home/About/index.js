@@ -73,9 +73,9 @@ const About = () => {
                   alt="Plate"
                 />
               </ScrollParallax> */}
-              {/* <button className={cn("play", styles.play)}>
+              <button className={cn("play", styles.play)}>
                 <Icon name="play" size="21" />
-              </button> */}
+              </button>
             </div>
           </div>
         </div>

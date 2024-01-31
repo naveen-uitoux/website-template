@@ -66,16 +66,16 @@ const About = () => {
                 src="/images/content/about-pic.png"
                 alt="About pic"
               />
-              <ScrollParallax className={styles.preview} animateIn="fadeInUp">
+              {/* <ScrollParallax className={styles.preview} animateIn="fadeInUp">
                 <img
                   srcSet="/images/content/plate@2x.png 2x"
                   src="/images/content/plate.png"
                   alt="Plate"
                 />
-              </ScrollParallax>
-              <button className={cn("play", styles.play)}>
+              </ScrollParallax> */}
+              {/* <button className={cn("play", styles.play)}>
                 <Icon name="play" size="21" />
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

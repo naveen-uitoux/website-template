@@ -24,6 +24,11 @@ jobs:
         with: 
           node-version: 20
 
+      - name: Set up Git
+        run: |
+          git config --global user.email "naveen@uitoux.in"
+          git config --global user.name "Naveen S.R."
+
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 

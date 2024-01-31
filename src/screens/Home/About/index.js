@@ -31,15 +31,15 @@ const About = () => {
       <div className={cn("container", styles.container)}>
         <div className={styles.row}>
           <div className={styles.col}>
-            <div className={cn("stage", styles.stage)}>fitness pro</div>
+            {/* <div className={cn("stage", styles.stage)}>fitness pro</div> */}
+            <h2 className={cn("h2", styles.title)}>
+              A Global UI/UX Designing Agency
+            </h2>
           </div>
           <div className={styles.col}>
-            <h2 className={cn("h2", styles.title)}>
-              Simple, powerful, <br></br>easy-to-use
-            </h2>
+            
             <div className={styles.info}>
-              Track your workouts, get better results, and be the best version
-              of you. Less thinking, more lifting.
+            At UITOUX, we’re the masters of Strategic Business Solutions, making global success effortlessly attainable. Our experts, customise every product just for you, Whether it's a stunning website or a seamless mobile app development, we've got your back. We enhance functionality to craft experiences that are pure joy. Our UI/UX designers are a fan of details, we know how to keep your audience hooked. We're not just passionate; we're design superheroes, here to elevate your brand, wow your audience, and fuel your growth
             </div>
           </div>
         </div>

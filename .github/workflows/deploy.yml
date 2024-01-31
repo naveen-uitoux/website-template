@@ -18,8 +18,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0  # Ensure the complete history is fetched
 
       - name: Setup Node
         uses: actions/setup-node@v1  # Use a stable Node.js version

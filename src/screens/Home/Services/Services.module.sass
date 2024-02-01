@@ -1,0 +1,74 @@
+@import ../../../styles/helpers
+
+.head
+  margin-bottom: 34px
+  +t
+    margin-bottom: 24px
+
+.headTitle
+    margin-bottom: 40px
+
+.headInfo
+    font-size: 2rem
+    font-weight: 500
+    color: $neutrals3
+    max-width: 1000px
+    +dark
+        color: $neutrals6
+    
+.btns
+  display: flex
+  align-items: center
+  gap: 1rem
+  margin-bottom: 44px
+
+.primaryButton
+  font-weight: 700
+
+.row
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -12px
+    +m
+      flex-direction: column
+
+.col
+  padding:  0 12px
+  margin-bottom: 34px
+  +m
+    margin-bottom: 24px
+
+.col7
+  +rmin(768)
+    flex: 0 0 auto
+    width: 58.33333333%
+
+.col5
+  +rmin(768)
+    flex: 0 0 auto
+    width: 41.66666667%
+
+.colorBox
+  padding: 24px 24px
+  background-position: top left
+  background-repeat: no-repeat
+  background-size: cover
+  min-height: 330px
+  border-radius: 20px
+  &Title
+    font-size: 40px
+    color: $white
+    margin-bottom: 24px
+  &Info
+    font-size: 20px
+    font-weight: 500
+    color: $white
+    text-align: justify
+  &.bgDark
+    background-image: url('../../../../public/images/content/home/pattern/magicpattern-dark.svg')
+  &.bgBlue
+    background-image: url('../../../../public/images/content/home/pattern/magicpattern-blue.svg')
+  &.bgRed
+    background-image: url('../../../../public/images/content/home/pattern/magicpattern-red.svg')
+  &.bgGreen
+    background-image: url('../../../../public/images/content/home/pattern/magicpattern-green.svg')

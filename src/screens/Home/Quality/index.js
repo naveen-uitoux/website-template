@@ -5,33 +5,33 @@ import ScrollParallax from "../../../components/ScrollParallax";
 
 const items = [
   {
-    title: "Happy Users",
-    counter: "1m",
-    images: "/images/content/user-green.svg",
+    title: "Year founded",
+    counter: "2015",
+    images: "/images/content/home/count/calendar.svg",
     alt: "user",
     content:
       "Stacks is a production-ready library of stackable content blocks built in React Native.",
   },
   {
-    title: "Downloads",
-    counter: "1.2m",
-    images: "/images/content/electrical-plug.svg",
+    title: "Team members",
+    counter: "80+",
+    images: "/images/content/home/count/teams.svg",
     alt: "electrical-plus",
     content:
       "Stacks is a production-ready library of stackable content blocks built in React Native.",
   },
   {
-    title: "Countries",
-    counter: "50+",
-    images: "/images/content/flag.svg",
+    title: "Successful Projects",
+    counter: "200+",
+    images: "/images/content/home/count/projects.svg",
     alt: "flag",
     content:
       "Stacks is a production-ready library of stackable content blocks built in React Native.",
   },
   {
-    title: "Likes on Facebook",
-    counter: "900k+",
-    images: "/images/content/facebook.svg",
+    title: "Happy clients",
+    counter: "50+",
+    images: "/images/content/home/count/clients.svg",
     alt: "facebook",
     content:
       "Stacks is a production-ready library of stackable content blocks built in React Native.",
@@ -42,6 +42,7 @@ const Quality = () => {
   return (
     <div className={cn("section-pb", styles.section)}>
       <div className={cn("container", styles.container)}>
+        <h2 className={cn("h2", styles.sectionTitle)}>UITOUX Today</h2>
         <div className={styles.list}>
           {items.map((x, index) => (
             <ScrollParallax className={styles.item} key={index}>

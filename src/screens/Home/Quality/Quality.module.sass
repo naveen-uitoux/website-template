@@ -1,5 +1,10 @@
 @import ../../../styles/helpers
 
+.sectionTitle
+    text-align: center
+    margin-bottom: 80px
+    +t
+        margin-bottom: 40px
 .list
     display: flex
     margin: 0 -16px
@@ -12,6 +17,7 @@
 
 .item
     position: relative
+    text-align: center
     flex: 0 0 calc(25% - 32px)
     width: calc(25% - 32px)
     margin: 0 16px
@@ -31,6 +37,8 @@
     align-content: center
     width: 40px
     height: 40px
+    margin-inline-end: auto
+    margin-inline-start: auto
     margin-bottom: 64px
     +t
         margin-bottom: 48px

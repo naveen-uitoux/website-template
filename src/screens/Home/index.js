@@ -3,16 +3,22 @@ import React, { useRef } from "react";
 import Hero from "./Hero";
 import Clients from "../../components/Clients";
 import Steps from "./Steps";
-import Intro from "../../components/Intro";
 import Book from "./Book";
-import ValueProps from "../../components/ValueProps";
 import About from "./About";
-import Team from "./Team";
 import Review from "../../components/Review";
 import Quality from "./Quality";
+import Services from "./Services";
+import Sights from "./Sights";
+import Faq from "./Faq";
+
+/* import ValueProps from "../../components/ValueProps";
+import Intro from "../../components/Intro";
+import Team from "./Team";
 import Advantages from "../../components/Advantages";
 import Workouts from "../../components/Workouts";
-import Offer from "../../components/Offer";
+import Offer from "../../components/Offer"; */
+
+
 
 const Home = () => {
   const scrollToRef = useRef(null);
@@ -23,16 +29,19 @@ const Home = () => {
       <Clients />
       <Book />
       <About />
-
+      <Services />
       <Steps scrollToRef={scrollToRef} />
-      <Intro />
+      <Quality />
+      <Review className="section-pb" />
+      <Sights />
+      <Faq />
+
+      {/* <Intro />
       <ValueProps className="section" />
       <Team />
-      <Review className="section" />
-      <Quality />
       <Advantages />
       <Workouts />
-      <Offer className="section-border-top" />
+      <Offer className="section-border-top" /> */}
     </>
   );
 };

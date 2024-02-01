@@ -1,8 +1,7 @@
 {
-  "name": "fitness-pro",
+  "name": "uitoux",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://naveen-uitoux.github.io/website-template/",
   "dependencies": {
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "14.0.0",

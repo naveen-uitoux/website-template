@@ -21,11 +21,11 @@
                 &:nth-child(2)
                     margin-bottom: 60px
     &:not(:last-child)
-        margin-bottom: 128px
+        margin-bottom: 60px
         +d
-            margin-bottom: 80px
+            margin-bottom: 48px
         +m
-            margin-bottom: 60px
+            margin-bottom: 36px
 
 .col
     flex: 0 0 calc(50% - 30px)
@@ -60,11 +60,21 @@
     margin-bottom: 20px
 
 .info
-    max-width: 522px
-    font-size: 1.125rem
+    //max-width: 522px
+    font-size: 20px
     font-weight: 500
     color: $neutrals2
     text-align: justify
+    line-height: 1.8
+    margin-top: 16px
+    +dark
+        color: $neutrals8
+
+.sectitle
+    +sf-pro-display
+    margin-bottom: 44px
+    +t
+        margin-bottom: 36px
 
 .list
     +d
@@ -76,6 +86,8 @@
     padding: 24px 24px
     background: $neutrals7
     border-radius: 1rem
+    +dark
+        background-color: $neutrals2
     &:not(:last-child)
         margin-bottom: 24px
         +t
@@ -133,9 +145,11 @@
 
 .endInfo
     width: 100%
-    max-width: 730px
+    max-width: 736px
     text-align: center
     margin: 0 auto
 
 .endTitle
+    font-size: 34px
+    +sf-pro-display
     margin-bottom: 40px

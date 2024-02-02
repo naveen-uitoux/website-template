@@ -49,6 +49,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        <h4 className={cn("h4", styles.sectitle)}>Here is why the Magic Happens</h4>
         <div className={styles.row}>
           <div className={styles.col}>
             <div className={styles.list}>

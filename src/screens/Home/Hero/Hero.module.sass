@@ -5,6 +5,7 @@
     display: flex
     align-items: center
     //min-height: 880px
+    +whyte-heavy
     padding: 34px 0 80px
     +x
         min-height: 800px
@@ -28,7 +29,6 @@
     line-height: 1.4
     text-align: center
     margin-bottom: 20px
-    +whyte-heavy
     &.dFlex
         display: flex
         gap: 1rem
@@ -48,6 +48,8 @@
     margin-bottom: 40px
     color: $neutrals2
     +fragment-mono
+    +dark
+        color: $neutrals8
 
 .btns
     display: flex
@@ -57,10 +59,10 @@
 
 .button
     height: auto
-    font-size: 1.5rem
+    font-size: 24px
     +sf-pro-display-medium
     background-color: $neutrals2
-    padding: 15px 48px
+    padding: 20px 54px
     border-radius: 68px
     &:hover
         background-color: $neutrals2

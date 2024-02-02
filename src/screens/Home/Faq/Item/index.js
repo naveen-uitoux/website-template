@@ -32,7 +32,7 @@ const Item = ({ item }) => {
                             </button>
                         </div>
                     </div>
-                    <div className={styles.col}>
+                    <div className={cn(styles.col, styles.colSep)}>
                         <div className={styles.info}>
                             You don’t need to do anything else
                         </div>

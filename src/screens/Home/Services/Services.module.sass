@@ -9,10 +9,11 @@
     margin-bottom: 40px
 
 .headInfo
-    font-size: 2rem
+    font-size: 34px
     font-weight: 500
     color: $neutrals3
     max-width: 1000px
+    line-height: 1.7648
     +dark
         color: $neutrals6
     
@@ -21,6 +22,14 @@
   align-items: center
   gap: 1rem
   margin-bottom: 44px
+
+.button
+  font-size: 20px
+  +rmin(1340)
+    height: 56px
+    padding-inline-start: 34px
+    padding-inline-end: 34px
+    border-radius: 30px
 
 .primaryButton
   font-weight: 700
@@ -49,26 +58,36 @@
     width: 41.66666667%
 
 .colorBox
-  padding: 24px 24px
+  padding: 34px 34px
   background-position: top left
   background-repeat: no-repeat
   background-size: cover
-  min-height: 330px
+  min-height: 280px
   border-radius: 20px
+  +t 
+    padding: 24px 24px
   &Title
     font-size: 40px
-    color: $white
-    margin-bottom: 24px
+    //color: $white
+    margin-bottom: 14px
+    +dark
+      color: $neutrals2
   &Info
     font-size: 20px
     font-weight: 500
-    color: $white
+    //color: $white
     text-align: justify
+    +dark
+      color: $neutrals2
   &.bgDark
-    background-image: url('../../../../public/images/content/home/pattern/magicpattern-dark.svg')
+    //background-image: url('../../../../public/images/content/home/pattern/magicpattern-dark.svg')
+    background-color: #F0D4D2
   &.bgBlue
-    background-image: url('../../../../public/images/content/home/pattern/magicpattern-blue.svg')
+    //background-image: url('../../../../public/images/content/home/pattern/magicpattern-blue.svg')
+    background-color: #A497CE
   &.bgRed
-    background-image: url('../../../../public/images/content/home/pattern/magicpattern-red.svg')
+    //background-image: url('../../../../public/images/content/home/pattern/magicpattern-red.svg')
+    background-color: #F9F0D2
   &.bgGreen
-    background-image: url('../../../../public/images/content/home/pattern/magicpattern-green.svg')
+    //background-image: url('../../../../public/images/content/home/pattern/magicpattern-green.svg')
+    background-color: #DEECEC

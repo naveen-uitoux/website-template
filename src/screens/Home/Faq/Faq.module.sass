@@ -7,23 +7,30 @@
     +m
         margin-bottom: 48px
 
+.relative
+    max-width: 733px
+    position: relative
+    margin: auto
+
 .topLeftImg
     position: absolute
     top: 0
-    left: 0
+    right: calc(100% + 20px)
 
 .topRightImg
     position: absolute
     top: 50%
-    right: 1rem
+    left: calc(100% + 20px)
     transform: translateY(-50%)
 
 .title
     margin-bottom: 20px
 
 .info
+    font-size: 18px
     max-width: 650px
-    margin: 0 auto 80px
+    line-height: 2
+    margin: 0 auto 60px
     color: $neutrals3
     +m
         margin-bottom: 48px
@@ -46,10 +53,10 @@
 
 .btn
     margin: 12px 6px 0
-    padding: 6px 12px
-    border-radius: 14px
+    padding: 12px 28px
+    border-radius: 24px
     background: none
-    +button-2
+    +button-3
     color: $neutrals4
     transition: all .2s
     -webkit-tap-highlight-color: rgba(0,0,0,0)

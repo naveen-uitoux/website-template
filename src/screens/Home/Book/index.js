@@ -108,97 +108,104 @@ const Book = () => {
           </div>
         </div>
       </div>
-      <div className={cn("container", styles.container, styles.relative)}>
-        <div className={styles.gallery}>
-          <div className={styles.preview}>
-            <Image
-              srcSet="/images/content/book-pic@2x.png 2x"
-              srcSetDark="/images/content/book-pic-dark@2x.png 2x"
-              src="/images/content/book-pic.png"
-              srcDark="/images/content/book-pic-dark.png"
-              alt="Book pic"
-            />
-          </div>
-          <ScrollParallax
-            className={styles.preview}
-            animateIn="fadeInUp"
-            offset={300}
-          >
-            <img
-              srcSet="/images/content/ball@2x.png 2x"
-              src="/images/content/ball.png"
-              alt="Ball"
-            />
-          </ScrollParallax>
-          <ScrollParallax
-            className={styles.preview}
-            animateIn="fadeInUp"
-            offset={300}
-          >
-            <img
-              srcSet="/images/content/ball-green@2x.png 2x"
-              src="/images/content/ball-green.png"
-              alt="Ball"
-            />
-          </ScrollParallax>
-          <ScrollParallax
-            className={styles.preview}
-            animateIn="fadeInUp"
-            offset={300}
-          >
-            <img
-              srcSet="/images/content/dumbbells@2x.png 2x"
-              src="/images/content/dumbbells.png"
-              alt="Dumbbells"
-            />
-          </ScrollParallax>
-        </div>
-        <div className={styles.wrap}>
-          <div className={styles.flex}>
-            <h5 className={cn("h5", styles.subTitle)}>E - COMMERCE</h5>
-            <div className={styles.iconFlex}>
-              {iconItems.map((icon, i) => (
-                <img src={icon?.images} alt={icon?.alt} key={i} />
-              ))}
-            </div>
-          </div>
-          
-          <Slider className="app-slider" {...settings}>
-            {items?.map((data, ind) => (
-              <div className={styles.sliderContent} key={ind}>
-                <h3 className={cn("h3", styles.title)}>{data?.title}</h3>
-                <div className={styles.info}>{data?.info}</div>
-                <div className={styles.list}>
-                  {data?.item?.map((x, index) => (
-                    <div className={styles.item} key={index}>
-                      <div
-                        className={styles.icon}
-                        style={{ backgroundColor: x.color }}
-                      >
-                        <img src={x.images} alt={x.alt} />
-                      </div>
-                      <div className={styles.details}>
-                        <div className={styles.content}>{x.content}</div>
-                        <div className={styles.subtitle}>{x.title}</div>
-                      </div>
-                    </div>
-                  ))}
+      <div className={cn("container")}>
+        <Slider className="app-slider" {...settings}>
+          {items?.map((data, ind) => (
+            <div className={cn(styles.container, styles.relative)}>
+              <div className={styles.gallery}>
+                <div className={styles.preview}>
+                  <Image
+                    srcSet="/images/content/book-pic@2x.png 2x"
+                    srcSetDark="/images/content/book-pic-dark@2x.png 2x"
+                    src="/images/content/book-pic.png"
+                    srcDark="/images/content/book-pic-dark.png"
+                    alt="Book pic"
+                  />
                 </div>
+                <ScrollParallax
+                  className={styles.preview}
+                  animateIn="fadeInUp"
+                  offset={300}
+                >
+                  <img
+                    srcSet="/images/content/ball@2x.png 2x"
+                    src="/images/content/ball.png"
+                    alt="Ball"
+                  />
+                </ScrollParallax>
+                <ScrollParallax
+                  className={styles.preview}
+                  animateIn="fadeInUp"
+                  offset={300}
+                >
+                  <img
+                    srcSet="/images/content/ball-green@2x.png 2x"
+                    src="/images/content/ball-green.png"
+                    alt="Ball"
+                  />
+                </ScrollParallax>
+                <ScrollParallax
+                  className={styles.preview}
+                  animateIn="fadeInUp"
+                  offset={300}
+                >
+                  <img
+                    srcSet="/images/content/dumbbells@2x.png 2x"
+                    src="/images/content/dumbbells.png"
+                    alt="Dumbbells"
+                  />
+                </ScrollParallax>
               </div>
-            ))}
-          </Slider>
-          
-          {/* <div className={styles.note}>
-            <strong className={styles.green}>10% Discount</strong> if you’re
-            already using the{" "}
-            <strong className={styles.black}>Fitness Pro</strong> on App Store
-          </div> */}
-          <div className={styles.btns}>
-            <Link className={cn("button", styles.button)} to="/class02-details">
-              <span>More Works</span>
-              {/* <Icon name="arrow-right" size="10" /> */}
-            </Link>
-          </div>
+
+              <div className={styles.wrap}>
+                <div className={styles.flex}>
+                  <h5 className={cn("h5", styles.subTitle)}>E - COMMERCE</h5>
+                  <div className={styles.iconFlex}>
+                    {iconItems.map((icon, i) => (
+                      <img src={icon?.images} alt={icon?.alt} key={i} />
+                    ))}
+                  </div>
+                </div>
+              
+              
+                
+                <div className={styles.sliderContent} key={ind}>
+                  <h3 className={cn("h3", styles.title)}>{data?.title}</h3>
+                  <div className={styles.info}>{data?.info}</div>
+                  <div className={styles.list}>
+                    {data?.item?.map((x, index) => (
+                      <div className={styles.item} key={index}>
+                        <div
+                          className={styles.icon}
+                          style={{ backgroundColor: x.color }}
+                        >
+                          <img src={x.images} alt={x.alt} />
+                        </div>
+                        <div className={styles.details}>
+                          <div className={styles.content}>{x.content}</div>
+                          <div className={styles.subtitle}>{x.title}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+              
+              
+                {/* <div className={styles.note}>
+                  <strong className={styles.green}>10% Discount</strong> if you’re
+                  already using the{" "}
+                  <strong className={styles.black}>Fitness Pro</strong> on App Store
+                </div> */}
+              </div>
+            </div>
+          ))}
+        </Slider>
+        <div className={styles.btns}>
+          <Link className={cn("button", styles.button)} to="/class02-details">
+            <span>More Works</span>
+            {/* <Icon name="arrow-right" size="10" /> */}
+          </Link>
         </div>
       </div>
     </div>

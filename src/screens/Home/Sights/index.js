@@ -210,7 +210,7 @@ const Sights = () => {
   return (
     <div className={cn("section-pb", styles.section)}>
       <div className={cn("container", styles.container)}>
-        <h2 className={cn("hero", styles.title)}>Insights</h2>
+        <h2 className={cn("h2", styles.title)}>Insights</h2>
         <div className={styles.info}>
           Illuminate Your Software Ventures with Actionable Insights, Gaining Invaluable Understanding for Informed Decisions.
         </div>

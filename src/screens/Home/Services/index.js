@@ -16,7 +16,7 @@ const Services = () => {
         </div>
         <div className={styles.btns}>
           <Link
-              className={cn("button", styles.primaryButton)}
+              className={cn("button", styles.button, styles.primaryButton)}
               to="/download"
           >
             Lets Talk  
@@ -40,7 +40,7 @@ const Services = () => {
           <div className={cn(styles.col, styles.col5)}>
             <ScrollParallax>
               <div className={cn(styles.colorBox, styles.bgBlue)}>
-                <h3 className={styles.colorBoxTitle}>Design</h3>
+                <h3 className={styles.colorBoxTitle}>Cloud Service</h3>
                 <p className={styles.colorBoxInfo}>Welcome to the Cloud, where we help you soar to new heights. Our Cloud services are like your ticket to the digital stratosphere.</p>
               </div>
             </ScrollParallax>

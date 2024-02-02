@@ -106,30 +106,34 @@ const Faq = () => {
           {/* <div className={cn("stage-small", styles.stage)}>
             learn how to get started
           </div> */}
-          <div className={styles.topLeftImg}>
-            <img src="/images/content/home/faq/question-illustration.svg" alt="Question" />
+          <div className={styles.relative}>
+            <div className={styles.topLeftImg}>
+              <img src="/images/content/home/faq/question-illustration.svg" alt="Question" />
+            </div>
+            <div className={styles.topRightImg}>
+              <img src="/images/content/home/faq/answer-illustration.svg" alt="Answer" />
+            </div>
+            <h3 className={cn("h3", styles.title)}>Frequently Asked Questions</h3>
+            <div className={styles.info}>
+              Join Fitness Pro community now to get free updates and also alot of
+              freebies are waiting for you or <a href="/#">Contact Support</a>
+            </div>
+            <div className={styles.nav}>
+              {items.map((x, index) => (
+                <button
+                  className={cn(styles.btn, {
+                    [styles.active]: x.title === category,
+                  })}
+                  onClick={() => setCategory(x.title)}
+                  key={index}
+                >
+                  {x.title}
+                </button>
+              ))}
+            </div>
           </div>
-          <div className={styles.topRightImg}>
-            <img src="/images/content/home/faq/answer-illustration.svg" alt="Answer" />
-          </div>
-          <h2 className={cn("h2", styles.title)}>Frequently Asked Questions</h2>
-          <div className={styles.info}>
-            Join Fitness Pro community now to get free updates and also alot of
-            freebies are waiting for you or <a href="/#">Contact Support</a>
-          </div>
-          <div className={styles.nav}>
-            {items.map((x, index) => (
-              <button
-                className={cn(styles.btn, {
-                  [styles.active]: x.title === category,
-                })}
-                onClick={() => setCategory(x.title)}
-                key={index}
-              >
-                {x.title}
-              </button>
-            ))}
-          </div>
+          
+          
           <Dropdown
             className={styles.dropdown}
             value={category}

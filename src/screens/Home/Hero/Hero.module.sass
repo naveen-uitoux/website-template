@@ -6,7 +6,7 @@
     align-items: center
     //min-height: 880px
     +whyte-heavy
-    padding: 34px 0 80px
+    padding: 34px 0 93px
     +x
         min-height: 800px
     +d
@@ -45,17 +45,36 @@
     margin-inline-start: auto
     margin-inline-end: auto
     text-align: center
-    margin-bottom: 40px
+    margin-bottom: 56px
     color: $neutrals2
     +fragment-mono
     +dark
         color: $neutrals8
 
-.btns
+.btnsWrap
     display: flex
+    align-items: center
     justify-content: center
+    flex-direction: column
+    gap: 66px
     /* +m
         display: block */
+    
+.btns
+    position: relative
+    &::after
+        top: 100%
+        left: 50%
+        width: 2px
+        content: ''
+        height: 84px
+        position: absolute
+        display: inline-block
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: top center
+        background-image: url('../../../../public/images/content/home/hero/bottom-line.svg')
+        z-index: -1
 
 .button
     height: auto
@@ -64,14 +83,74 @@
     background-color: $neutrals2
     padding: 20px 54px
     border-radius: 68px
+    position: relative
     &:hover
         background-color: $neutrals2
-    +m
-        width: 100%
-    &:not(:last-child)
-        margin-right: 16px
-        +m
-            margin: 0 0 16px
+    &::before, &::after
+        top: 50%
+        content: ''
+        height: 231px
+        width: 348px
+        position: absolute
+        display: inline-block
+        background-repeat: no-repeat
+    &::before
+        right: calc(100% + 20px)
+        background-image: url('../../../../public/images/content/home/hero/left-steps-line.svg')
+    &::after
+        left:  calc(100% + 20px)
+        background-image: url('../../../../public/images/content/home/hero/right-steps-line.svg')
+
+.redBox
+    width: 199px
+    height: 100%
+    border: 1px solid $neutrals2
+    background-color: #FF4F00
+    border-radius: 4px 0 0 4px
+    &Wrap
+        width: 225px
+        height: 248px
+        position: relative
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: bottom right
+        background-image: url('../../../../public/images/content/home/hero/redbox-bg.svg')
+
+.emptyBox
+    top: -26px
+    right: -25px
+    width: 52px
+    height: 52px
+    position: absolute
+    display: inline-block
+    border-radius: 4px
+    border: 1px dashed $neutrals2
+    background-color: #E5EAF7
+
+.systemBox
+    left: -32px
+    bottom: 20px
+    position: absolute
+    &Icon
+        padding: 12px 12px
+        border-radius: 4px
+        border: 1px dashed $neutrals2
+        background-color: #E5EAF7
+    &Caption
+        width: 64px
+        display: flex
+        font-size: 14px
+        font-family: 'Fragment Mono', monospace
+        line-height: 1.429
+        padding: 2px 3px
+        align-items: center
+        justify-content: center
+        color: $white
+        background-color: #FF4F00
+        border: 1px solid $neutrals2
+        border-radius: 30px
+        margin-top: -6px
+
 
 .gallery
     position: absolute

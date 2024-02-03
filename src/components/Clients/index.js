@@ -84,21 +84,21 @@ const Clients = () => {
       {
         breakpoint: 1369,
         settings: {
-          centerPadding: "30px",
+          slidesToShow: 5,
         }
       },
       {
         breakpoint: 1023,
         settings: {
           slidesToShow: 4,
-          centerPadding: "30px",
+          centerPadding: "45px",
         }
       },
       {
         breakpoint: 767,
         settings: {
           slidesToShow: 3,
-          centerPadding: "16px",
+          centerPadding: "20px",
         }
       },
       {

@@ -1,0 +1,18 @@
+<svg width="349" height="231" viewBox="0 0 349 231" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="230.5" x2="246" y2="230.5" stroke="url(#paint0_linear_353_18719)"/>
+<path d="M122 226L119.613 231L125.387 231L123 226L122 226ZM122.5 77.5L122 77.5L122.5 77.5ZM123 226.5L123 77.5L122 77.5L122 226.5L123 226.5ZM124.5 76L240.5 76L240.5 75L124.5 75L124.5 76ZM243 73.5L243 2.99999L242 2.99999L242 73.5L243 73.5ZM244.5 1.49999L348.5 1.49999L348.5 0.49999L244.5 0.499995L244.5 1.49999ZM243 2.99999C243 2.17156 243.672 1.49999 244.5 1.49999L244.5 0.499995C243.119 0.499995 242 1.61929 242 2.99999L243 2.99999ZM240.5 76C241.881 76 243 74.8807 243 73.5L242 73.5C242 74.3284 241.328 75 240.5 75L240.5 76ZM123 77.5C123 76.6716 123.672 76 124.5 76L124.5 75C123.119 75 122 76.1193 122 77.5L123 77.5Z" fill="url(#paint1_linear_353_18719)"/>
+<path d="M185.5 75.5L180 81.5" stroke="#9A9A9B" stroke-linecap="round"/>
+<path d="M180 71L185.5 75.5" stroke="#9A9A9B" stroke-linecap="round"/>
+<circle cx="183" cy="76" r="13" fill="#CBCFD8" fill-opacity="0.4"/>
+<defs>
+<linearGradient id="paint0_linear_353_18719" x1="0" y1="231" x2="246" y2="231" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CACACA" stop-opacity="0"/>
+<stop offset="0.492243" stop-color="#FCFCFC" stop-opacity="0.507757"/>
+<stop offset="1" stop-color="#CACACA" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_353_18719" x1="123" y1="231" x2="300" y2="-85.9998" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FCFCFC"/>
+<stop offset="1" stop-color="#CACACA" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

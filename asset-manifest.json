@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.d197e3a1.css",
-    "main.js": "/static/js/main.2b131efb.js",
+    "main.css": "/static/css/main.5ff4c3a7.css",
+    "main.js": "/static/js/main.68523863.js",
     "index.html": "/index.html",
     "static/media/redbox-bg.svg": "/static/media/redbox-bg.58a07ccfa8207de98bcb.svg",
+    "static/media/right-steps-line-dark.svg": "/static/media/right-steps-line-dark.89d5fd044199f0351cbb.svg",
     "static/media/right-steps-line.svg": "/static/media/right-steps-line.bca72223c949ef96da0f.svg",
+    "static/media/left-steps-line-dark.svg": "/static/media/left-steps-line-dark.371b50b72dadfd3a2abc.svg",
     "static/media/left-steps-line.svg": "/static/media/left-steps-line.257b9ee90d0c9b6172b5.svg",
+    "static/media/left-idea-line-dark.svg": "/static/media/left-idea-line-dark.5eec25c5641c2aeab04e.svg",
+    "static/media/left-idea-line.svg": "/static/media/left-idea-line.1ac41b26c7c88654a70c.svg",
     "static/media/bottom-line.svg": "/static/media/bottom-line.70595b77c76f57196c0c.svg",
-    "main.d197e3a1.css.map": "/static/css/main.d197e3a1.css.map",
-    "main.2b131efb.js.map": "/static/js/main.2b131efb.js.map"
+    "main.5ff4c3a7.css.map": "/static/css/main.5ff4c3a7.css.map",
+    "main.68523863.js.map": "/static/js/main.68523863.js.map"
   },
   "entrypoints": [
-    "static/css/main.d197e3a1.css",
-    "static/js/main.2b131efb.js"
+    "static/css/main.5ff4c3a7.css",
+    "static/js/main.68523863.js"
   ]
 }

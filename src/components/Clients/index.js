@@ -58,7 +58,7 @@ const list = [
 const Clients = () => {
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 2500,
     slidesToShow: 10,
     slidesToScroll: 1,
     dots: false,
@@ -68,6 +68,7 @@ const Clients = () => {
     autoplaySpeed: 2500,
     centerMode: true,
     centerPadding: "60px",
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1920,

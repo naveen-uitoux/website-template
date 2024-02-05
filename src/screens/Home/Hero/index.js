@@ -30,6 +30,48 @@ const Hero = ({ scrollToRef }) => {
                             >
                                 Book an Appointment &nbsp; 👋
                             </Link>
+                            <div className={styles.leftIdeaWrap}>
+                                <div className={styles.leftIdeaContent}>
+                                    <p className={styles.leftIdeaTitle}>IdeaS</p>
+                                    <p className={styles.leftIdeaInfo}>Explore groundbreaking solutions and test drive future tech tailor-made for your vision.</p>
+                                </div>
+                            </div>
+                            <div className={styles.rightIdeaWrap}>
+                                <div className={styles.rightIdeaContent}>
+                                    <p className={styles.rightIdeaTitle}>Ideas</p>
+                                    <p className={styles.rightIdeaInfo}>Transform Chaotic Concepts into Business-Driving Insights.</p>
+                                </div>
+                            </div>
+                            <div className={styles.leftFlowWrap}>
+                                <div className={styles.leftFlowImg}></div>
+                                <div className={styles.leftFlowContent}>
+                                    <div className={styles.leftFlowSwitch}>IDEAS</div>
+                                    <p className={styles.leftFlowInfo}>Your Story, Our Code : Be heard, be understood!</p>
+                                </div>
+                            </div>
+                            <div className={styles.rightFlowWrap}>
+                                <div className={styles.rightFlowImg}>
+                                    <div className={styles.rightFlowImgCaption}>2023</div>
+                                </div>
+                                <div className={styles.rightFlowContent}>
+                                    <div className={styles.rightFlowInfoWrap}>
+                                        <div className={styles.rightFlowInfoHead}>
+                                            <div className={styles.rightFlowInfoHeadIcon}>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <Link>
+                                                <Image
+                                                    src="/images/content/link-arrow.svg"
+                                                    srcDark="/images/content/link-arrow.svg"
+                                                    alt='New Link Arrow'
+                                                />
+                                            </Link>
+                                        </div>
+                                        <p className={styles.rightFlowInfoText}>Let’s co-create! Collaborate with our agile team to build, iterate, and perfect your digital masterpiece.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className={styles.redBoxWrap}>
                             <div className={styles.redBox}></div>

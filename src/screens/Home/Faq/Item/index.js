@@ -23,13 +23,13 @@ const Item = ({ item }) => {
                     <div className={styles.col}>
                         <div className={styles.preview}>
                             <img
-                                srcSet="/images/content/faq-pic@2x.png 2x"
-                                src="/images/content/faq-pic.png"
+                                srcSet="/images/content/home/faq/faq-pic.svg"
+                                src="/images/content/home/faq/faq-pic.svg"
                                 alt="About pic"
                             />
-                            <button className={cn("play-small", styles.play)}>
+                            {/* <button className={cn("play-small", styles.play)}>
                                 <Icon name="play" size="14" />
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                     <div className={cn(styles.col, styles.colSep)}>

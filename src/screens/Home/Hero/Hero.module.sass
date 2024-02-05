@@ -86,20 +86,20 @@
     position: relative
     &:hover
         background-color: $neutrals2
-    &::before, &::after
+    /* &::before, &::after
         top: 50%
         content: ''
         height: 231px
         width: 348px
         position: absolute
         display: inline-block
-        background-repeat: no-repeat
-    &::before
+        background-repeat: no-repeat */
+    /* &::before
         right: calc(100% + 20px)
-        background-image: url('../../../../public/images/content/home/hero/left-steps-line.svg')
-    &::after
+        background-image: url('../../../../public/images/content/home/hero/left-steps-line.svg') */
+    /* &::after
         left:  calc(100% + 20px)
-        background-image: url('../../../../public/images/content/home/hero/right-steps-line.svg')
+        background-image: url('../../../../public/images/content/home/hero/right-steps-line.svg') */
 
 .redBox
     width: 199px
@@ -150,8 +150,175 @@
         border: 1px solid $neutrals2
         border-radius: 30px
         margin-top: -6px
+    
+.leftIdea
+    &Wrap
+        position: absolute
+        top: -50%
+        right:  calc(100% + 199px)
+        transform: translateY(-50%)
+        +w
+            right:  calc(100% + 150px)
+    &Content
+        width: 204px
+        padding: 11px 9px
+        border: 1px solid $neutrals2
+        background-color: #E5F588
+        border-radius: 4px
+        position: relative
+        &::before
+            top: -1px
+            width: 132px
+            height: 132px
+            content:  ''
+            position: absolute
+            display: inline-block
+            right: calc(100% + 26px)
+            background-repeat: no-repeat
+            background-image: url('../../../../public/images/content/home/hero/left-idea-line.svg')
+            +dark
+                background-image: url('../../../../public/images/content/home/hero/left-idea-line-dark.svg')
+    &Title
+        font-size: 14px
+        font-weight: 700
+        line-height: 1.429
+        font-family: 'Gilroy'
+        text-transform: uppercase
+        margin-bottom: 8px
+    &Info
+        font-size: 12px
+        font-family: 'Fragment Mono', monospace
+        line-height: 1.667
+        text-transform: uppercase
 
+.rightIdea
+    &Wrap
+        position: absolute
+        top: -5px
+        left:  calc(100% + 164px)
+    &Content
+        width: 204px
+        padding: 11px 11px
+        border: 1px dashed $neutrals2
+        background-color: #E5EAF7
+        border-radius: 4px
+    &Title
+        font-size: 14px
+        font-weight: 700
+        line-height: 1.2144
+        font-family: 'Gilroy'
+        text-transform: uppercase
+        margin-bottom: 7px
+    &Info
+        font-size: 10px
+        font-family: 'Fragment Mono', monospace
+        line-height: 1.4
+        text-transform: uppercase
 
+.leftFlow
+    &Wrap
+        position: absolute
+        top: 50%
+        right: calc(100% + 20px)
+    &Content
+        padding: 26px 0 0 3px
+    &Img
+        height: 231px
+        width: 348px
+        background-repeat: no-repeat
+        background-image: url('../../../../public/images/content/home/hero/left-steps-line.svg')
+        +dark
+            background-image: url('../../../../public/images/content/home/hero/left-steps-line-dark.svg')
+    &Switch
+        font-size: 14px
+        font-family: 'Fragment Mono', monospace
+        line-height: 1.429
+        display: inline-block
+        color: $white
+        position: relative
+        padding: 3px 8px 3px 19px
+        background-color: $neutrals2
+        border-radius: 19px
+        margin-left: 12px
+        margin-bottom: 14px
+        &::before
+            top: 0
+            left: -12px
+            content: ''
+            width: 26px
+            height: 26px
+            position: absolute
+            display: inline-block
+            background-color: $white
+            border-radius: 50%
+            box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.08)
+    &Info
+        font-family: 'Fragment Mono', monospace
+        font-size: 14px
+        line-height: 1.429
+        max-width: 210px
+
+.rightFlow
+    &Wrap
+        position: absolute
+        top: 50%
+        left: calc(100% + 20px)
+    &Content
+        padding-top: 16px
+    &Img
+        height: 231px
+        width: 348px
+        position: relative
+        background-repeat: no-repeat
+        background-image: url('../../../../public/images/content/home/hero/right-steps-line.svg')
+        +dark
+            background-image: url('../../../../public/images/content/home/hero/right-steps-line-dark.svg')
+        &Caption
+            width: 26px
+            right: 110px
+            bottom: 42px
+            padding: 4px 6.5px 4px 8.5px
+            font-family: 'Fragment Mono', monospace
+            font-size: 11px
+            line-height: 1.182
+            color: #7F7F80
+            word-break: break-all
+            display: inline-flex
+            position: absolute
+            border: 1px solid #7F7F80
+            background-color: $white
+            border-radius: 30px
+    &Info
+        &Wrap
+            max-width: 272px
+            padding: 12px 12px 10px 12px
+            border: 1px solid $neutrals2
+            background-color: #E5F588
+            border-radius: 4px
+            margin-left: auto
+            margin-right: -13px
+        &Head
+            display: flex
+            align-items: top
+            justify-content: space-between
+            margin-bottom: 8px
+            &Icon
+                display: flex
+                gap: 4px
+                span
+                    width: 8px
+                    height: 8px
+                    border: 1px solid #7E7E7F
+                    border-radius: 2px
+                    &:first-child
+                        background-color: #7E7E7F
+        &Text
+            font-family: 'Fragment Mono', monospace
+            font-size: 12px
+            line-height: 1.429
+            text-transform: uppercase
+            color: $neutrals2
+        
 .gallery
     position: absolute
     top: 50%

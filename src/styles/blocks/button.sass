@@ -21,6 +21,15 @@
       &:last-child
         margin-left: 15px
 
+.button
+  @media only screen and (min-width: 1340px)
+    height: 56px
+    font-size: 20px
+    font-weight: 700
+    padding-inline-start: 34px
+    padding-inline-end: 34px
+    border-radius: 30px
+
 .button-stroke
   background: none
   box-shadow: 0 0 0 2px $neutrals6 inset
@@ -42,12 +51,24 @@
     &:hover
       box-shadow: 0 0 0 2px $neutrals8 inset
       background: none
+  @media only screen and (min-width: 1340px)
+    height: 56px
+    font-size: 20px
+    font-weight: 700
+    padding-inline-start: 34px
+    padding-inline-end: 34px
+    border-radius: 30px
 
 .button-small
   height: 40px
   border-radius: 20px
   padding: 0 16px
   font-size: 14px
+  @media only screen and (min-width: 1340px)
+    height: 48px
+    font-size:  16px
+    padding: 0 24px
+    border-radius: 24px
 
 .button-circle-stroke
   flex: 0 0 48px

@@ -47,9 +47,12 @@
 
 .col
     flex: 0 0 450px
+    &.colSep
+        flex: 0 0 calc(100% - 500px)
     +rmin(1160)
+        flex: 0 0 560px
         &.colSep
-            flex: 0 0 calc(100% - 500px)
+            flex: 0 0 calc(100% - 610px)
     +d
         flex: 0 0 calc(50% - 32px)
         width: calc(50% - 32px)

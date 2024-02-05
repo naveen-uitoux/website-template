@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import cn from "classnames";
 import styles from "./About.module.sass";
@@ -9,30 +9,37 @@ const items = [
   {
     title: "Customer-Centric Approach: It's All About You!",
     content:
-      "Track your workouts, get better results, and be the best version of you.",
+      "At UITOUX, we genuinely prioritise your well-being. Your success, your team's happiness, and your users' satisfaction are at the heart of everything we do. We're here to exceed expectations and go the extra mile for you.",
     color: "#9757D7",
+    key: 1
   },
   {
     title: "Innovation & Excellence: Where Every Day is Extraordinary!",
     content:
-      "Track your workouts, get better results, and be the best version of you.",
+      "At UITOUX, we genuinely prioritise your well-being. Your success, your team's happiness, and your users' satisfaction are at the heart of everything we do. We're here to exceed expectations and go the extra mile for you.",
     color: "#EF466F",
+    key: 2
   },
   {
     title: "Integrity & Transparency: The Trust Tango!",
     content:
-      "Track your workouts, get better results, and be the best version of you.",
+      "At UITOUX, we genuinely prioritise your well-being. Your success, your team's happiness, and your users' satisfaction are at the heart of everything we do. We're here to exceed expectations and go the extra mile for you.",
     color: "#45B26B",
+    key: 3
   },
   {
     title: "Long-Term Commitment: Sustainability is Our Jam!",
     content:
-      "Track your workouts, get better results, and be the best version of you.",
+      "At UITOUX, we genuinely prioritise your well-being. Your success, your team's happiness, and your users' satisfaction are at the heart of everything we do. We're here to exceed expectations and go the extra mile for you.",
     color: "#B24545",
+    key: 4
   },
 ];
 
 const About = () => {
+
+  const [selectedKey, setSelectedKey] = useState(1)
+
   return (
     <div className={cn("section-border-top", styles.section)}>
       <div className={cn("container", styles.container)}>
@@ -45,7 +52,7 @@ const About = () => {
           </div>
           <div className={styles.col}>
             <div className={styles.info}>
-            At UITOUX, we’re the masters of Strategic Business Solutions, making global success effortlessly attainable. Our experts, customise every product just for you, Whether it's a stunning website or a seamless mobile app development, we've got your back. We enhance functionality to craft experiences that are pure joy. Our UI/UX designers are a fan of details, we know how to keep your audience hooked. We're not just passionate; we're design superheroes, here to elevate your brand, wow your audience, and fuel your growth
+              At UITOUX, we’re the masters of Strategic Business Solutions, making global success effortlessly attainable. Our experts, customise every product just for you, Whether it's a stunning website or a seamless mobile app development, we've got your back. We enhance functionality to craft experiences that are pure joy. Our UI/UX designers are a fan of details, we know how to keep your audience hooked. We're not just passionate; we're design superheroes, here to elevate your brand, wow your audience, and fuel your growth
             </div>
           </div>
         </div>
@@ -55,14 +62,20 @@ const About = () => {
             <div className={styles.list}>
               {items.map((x, index) => (
                 <ScrollParallax className={styles.item} key={index}>
-                  <div
-                    className={styles.number}
-                    style={{ backgroundColor: x.color }}
-                  >
-                    0{index + 1}
+                  <div className={cn(styles.itemHead, {[styles.active]: selectedKey  === x.key})} onClick={()=>setSelectedKey(x?.key)}>
+                    <div
+                      className={styles.number}
+                      style={{ backgroundColor: x.color }}
+                    >
+                      0{index + 1}
+                    </div>
+                    <div className={styles.subtitle}>{x.title}</div>
                   </div>
-                  <div className={styles.subtitle}>{x.title}</div>
-                  {/* <div className={styles.content}>{x.content}</div> */}
+                  <div className={cn(styles.itemBody, {[styles.show]: selectedKey  === x.key})}>
+                    <div className={styles.content}>
+                      <p>{x.content}</p>
+                    </div>
+                  </div>
                 </ScrollParallax>
               ))}
             </div>

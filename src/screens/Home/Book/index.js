@@ -111,7 +111,7 @@ const Book = () => {
       <div className={cn("container")}>
         <Slider className="app-slider" {...settings}>
           {items?.map((data, ind) => (
-            <div className={cn(styles.container, styles.relative)}>
+            <div className={cn(styles.container, styles.relative)} key={ind}>
               <div className={styles.gallery}>
                 <div className={styles.preview}>
                   <Image

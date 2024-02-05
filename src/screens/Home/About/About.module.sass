@@ -83,9 +83,22 @@
         max-width: 100%
 
 .item
-    padding: 24px 24px
-    background: $neutrals7
-    border-radius: 1rem
+    &Head
+        padding: 24px 24px
+        background: $neutrals7
+        border-radius: 1rem
+        cursor: pointer
+        &.active
+            background-color: $white
+            box-shadow:  0px 4px 16px 0px rgba(0, 0, 0, 0.08)
+    &Body
+        padding: 34px 24px
+        height: 200px
+        overflow: hidden
+        transition: height 0.35s ease-in-out
+        &:not(.show) 
+            display: none
+            height: 0px
     +dark
         background-color: $neutrals2
     &:not(:last-child)
@@ -118,8 +131,8 @@
         margin-bottom: 16px
 
 .content
-    +caption-1
-    color: $neutrals4
+    font-size: 20px
+    line-height: 1.6
 
 .bg
     position: relative
